@@ -203,7 +203,7 @@
     border-radius: 10px;
     box-shadow: 1px 1px 2px darkgrey, 0 0 25px darkgrey, 0 0 5px darkgrey;
     position: fixed;
-    bottom: 20px;  /* Align both buttons to the bottom */
+    bottom: 20px;  /* Align both buttons to the bottom */#
 }
 
 .rBtn {
@@ -214,10 +214,10 @@
     left: 20px; /* Swapped position: now on the left */
 }
 
-.rBtn:hover {
-    transform: scale(1.2) 0.5s ease;
+.rBtn:hover, .lBtn:hover {
+    transform: scale(1.2);
 }
 
-.lBtn:hover {
-    transform: scale(1.2) 1s ease-in-out;
+.rBtn:not(:hover), .lBtn:not(:hover) {
+    transform: scale(1);
 }
