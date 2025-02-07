@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar {
@@ -183,9 +183,18 @@
 }
 
 .imagebar_nav {
-    height: 871px;
-    max-width: 100%;
     background-color: #303030;
+    box-shadow: 1px 1px 2px #303030, 0 0 25px grey, 0 0 5px grey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    position: sticky;
+    top: 0;
+    width: 150px;
+    height: 75px;
+    z-index: 99999;
 }
 
 .nextBtn {
@@ -195,7 +204,7 @@
     width: 50px;
     text-align: center;
     text-decoration: none;border-radius: 0 0 0 0;
-    position: relative;
+    position: 1;
     display: absolute;
     border-radius: 10px;
     box-shadow: 1px 1px 2px darkgrey, 0 0 25px darkgrey, 0 0 5px darkgrey;
@@ -205,6 +214,7 @@
     background: #fff;
     color: #303030;
     height: 50px;
+    position: 1;
     width: 50px;
     text-align: center;
     text-decoration: none;
