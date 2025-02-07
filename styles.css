@@ -193,7 +193,7 @@
     z-index: 99999;
 }
 
-.rBtn, .lBtn {
+.rBtn, .lBtn  {
     background: #fff;
     color: #303030;
     height: 50px;
@@ -203,13 +203,21 @@
     border-radius: 10px;
     box-shadow: 1px 1px 2px darkgrey, 0 0 25px darkgrey, 0 0 5px darkgrey;
     position: fixed;
-    bottom: 20px;
-    transition: transform 0.3s ease; /* Smooth enlargement effect */
+    bottom: 20px;  /* Align both buttons to the bottom */
 }
 
-/* Enlarge on hover */
-.rBtn:hover, .lBtn:hover {
-    transform: scale(1.2); /* Increases size by 20% */
+.rBtn {
+    left: 90px; /* Swapped position: now on the right */
 }
 
+.lBtn {
+    left: 20px; /* Swapped position: now on the left */
+}
 
+.rBtn:hover {
+    transform: scale(1.2) 0.5s ease;
+}
+
+.lBtn:hover {
+    transform: scale(1.2) 1s ease-in-out;
+}
