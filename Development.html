@@ -4,31 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>website</title>
-    <link rel="stylesheet" href="devstyles.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        :root {
-            --cursor-color: white;
+        .button:hover {
+            height: 60px;  
+            width: 100px;
+            background: #fff;
+            color: #303030;
+            border-radius: 10px 0px 0px 10px;
+            transition: all 0.5s ease;
         }
 
-        .h1 {
-            border-right: 1px solid var(--cursor-color);
-            animation: 
-                blinking 1s steps(1, end) infinite,
-                typing 4s steps(40, end);
-            overflow: hidden;
-            white-space: nowrap;
-            z-index: 111;
+        .button:not(:hover) {
+            height: 60px;
+            width: 100px;
+            background: #303030;
+            color: #fff;
+            border-radius: 10px 0px 0px 10px;
+            transition: all 0.5s ease;
         }
 
-        @keyframes blinking {
-            0% { border-color: transparent}
-            50% { border-color: var(--cursor-color);}
-            100% { border-color: transparent}
+        .button2:hover {
+            height: 60px;
+            width: 180px;
+            background: #fff;
+            color: #303030;
+            border-radius: 0 0 0 0;
+            transition: all 0.5s ease;
         }
 
-        @keyframes typing {
-            0% { width: 0;}
-            100% { width: 100%;}
+        .button2:not(:hover) {
+            height: 60px;
+            width: 180px;
+            background: #fff;
+            color: #303030;
+            border-radius: 0 0 0 0;
+            transition: all 0.5s ease;
+        }
+
+        .button3:hover {
+            height: 60px;
+            width: 110px;
+            background: #fff;
+            color: #303030;
+            border-radius: 0 0 0 0;
+            transition: all 0.5s ease;
+        }
+
+        .button3:not(:hover) {
+            height: 60px;
+            width: 110px;
+            background: #303030;
+            color: #fff;
+            border-radius: 0 0 0 0;
+            transition: all 0.5s ease;
+        }
+
+        .button4:hover {
+            height: 60px;
+            width: 110px;
+            background: #fff;
+            color: #303030;
+            border-radius: 10 10 0 0;
+            transition: all 0.5s ease;
+        }
+
+        .button4:not(:hover) {
+            height: 60px;
+            width: 110px;
+            background: #303030;
+            color: #fff;
+            border-radius: 10 10 0 0;
+            transition: all 0.5s ease;
         }
     </style>
 </head>
