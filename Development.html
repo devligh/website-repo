@@ -4,7 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="devstyles.css">
+    <style>
+        :root {
+            --cursor-color: white;
+        }
+
+        .h1 {
+            border-right: 1px solid var(--cursor-color);
+            animation: 
+                blinking 1s steps(1, end) infinite,
+                typing 4s steps(40, end);
+            overflow: hidden;
+            white-space: nowrap;
+            z-index: 111;
+        }
+
+        @keyframes blinking {
+            0% { border-color: transparent}
+            50% { border-color: var(--cursor-color);}
+            100% { border-color: transparent}
+        }
+
+        @keyframes typing {
+            0% { width: 0;}
+            100% { width: 100%;}
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -12,20 +38,21 @@
             <div class="navbar_menu_container">
                 <ul class="navbar_menu">
                     <li class="navbar_btn">
-                        <a href="/" class="button">Home</a>
+                        <a href="/index.html" class="button">Home</a>
                     </li>
                     <li class="navbar_btn">
-                        <a href="/" class="button2">Development</a>
+                        <a href="/Development.html" class="button2">Development</a>
                     </li>
                     <li class="navbar_btn">
-                        <a href="/" class="button3">Social</a>
+                        <a href="/Social.html" class="button3">Social</a>
                     </li>
                     <li class="navbar_btn">
-                        <a href="/" class="button4">About</a>
+                        <a href="/About.html" class="button4">About</a>
                     </li>
                 </ul>                
             </div>
         </div>
     </nav>
+    <h1>Welcome to the development page</h1>
 </body>
 </html>

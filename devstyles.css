@@ -108,8 +108,8 @@
 .button:not(:hover) {
     height: 60px;
     width: 100px;
-    background: #fff;
-    color: #303030;
+    background: #303030;
+    color: #fff;
     border-radius: 10px 0px 0px 10px;
     transition: all 0.5s ease;
 }
@@ -126,8 +126,8 @@
 .button2:not(:hover) {
     height: 60px;
     width: 180px;
-    background: #303030;
-    color: #fff;
+    background: #fff;
+    color: #303030;
     border-radius: 0 0 0 0;
     transition: all 0.5s ease;
 }
@@ -168,56 +168,7 @@
     transition: all 0.5s ease;
 }
 
-.imagebar {
-    color: #ffffff00;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    font-size: 1.25rem;
-    position: sticky;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-}
-
-.imagebar_nav {
-    background-color: #30303000;
-
-    font-size: 2rem;
-    position: fixed;
-    bottom: 20px; /* Move to bottom */
-    left: 20px;   /* Move to left */
-    width: 150px;
-    height: 75px;
-    z-index: 99999;
-}
-
-.rBtn, .lBtn  {
-    background: #fff;
-    color: #303030;
-    height: 50px;
-    width: 50px;
-    text-align: center;
+.a {
     text-decoration: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 2px darkgrey, 0 0 25px darkgrey, 0 0 5px darkgrey;
-    position: fixed;
-    bottom: 20px;  /* Align both buttons to the bottom */
-}
-
-.rBtn {
-    left: 90px; /* Swapped position: now on the right */
-}
-
-.lBtn {
-    left: 20px; /* Swapped position: now on the left */
-}
-
-.rBtn:hover, .lBtn:hover {
-    transform: scale(1.2);
-}
-
-.rBtn:not(:hover), .lBtn:not(:hover) {
-    transform: scale(1);
+    font-size: 1.25rem;
 }
