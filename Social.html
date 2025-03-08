@@ -18,6 +18,7 @@
             overflow: hidden;
             white-space: nowrap;
             z-index: 111;
+            color: white;
         }
 
         @keyframes blinking {
@@ -29,6 +30,41 @@
         @keyframes typing {
             0% { width: 0;}
             100% { width: 100%;}
+        }
+
+        .sm_navigator {
+            background-color: #303030;
+            max-width: 700px;
+            margin: 0 auto;
+            box-shadow: 1px 1px 2px darkgray, 0 0 25px grey, 0 0 5px grey;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.25rem;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 99999;
+        }
+        .link:link {
+            color: white;
+            height: 60px;  
+            padding-top: 12.5px;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center;
+            position: sticky;
+        }
+
+        .link:visited {
+            color: white;
+            height: 60px;  
+            padding-top: 12.5px;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center;
+            position: sticky;
         }
     </style>
 </head>
@@ -53,9 +89,15 @@
             </div>
         </div>
     </nav>
-    <h1>Welcome to the social page</h1>
-    <nav class="sm_container">
-        
+    <h1>         fdsf</h1>
+    <nav class="sm_navigator">
+        <div class="sm_container">
+                <ul class="sm_container">
+                    <li class="navbar_btn">
+                        <a href="https://github.com/devligh/website-repo"target="_blank" class="link">Visit the GitHub repository</a>
+                    </li>
+                </ul>                
+            </div>
     </nav>
 </body>
 </html>
