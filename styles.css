@@ -55,23 +55,23 @@
     z-index: 999999;
 }
 
-.discord {
+.discord-image-button, .github-image-button {
+   
     text-decoration: none;
     padding: 10px;
     background-color: transparent;
-    background: none;
-    box-shadow: 1px 1px 2px darkgrey, 0 0 25px darkgrey, 0 0 5px darkgrey;
     border: none;
-    color: inherit;
+    cursor: pointer;
 }
-.github {
-    text-decoration: none;
-    padding: 10px;
-    background-color: transparent;
-    background: none;
-    box-shadow: 1px 1px 2px darkgrey, 0 0 25px darkgrey, 0 0 5px darkgrey;
-    border: none;
-    color: inherit;
+
+.discord-image-button img {
+    height: 40px;
+    width: 50px;
+}
+
+.github-image-button img {
+    height: 35px;
+    width: 35px;
 }
 
 .navbar_menu {
